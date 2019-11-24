@@ -1,0 +1,20 @@
+Program parsed correctly!
+---------------------------
+--------Printing AST-------
+---------------------------
+Program
+    Function List
+    Statement List
+        Declaration statement: arrOfStrings
+            Type: list
+                Type: text
+            Assignment to variable: arrOfStrings
+                Expression List
+                    Quoted string: "Hello"
+                    Quoted string: "there"
+                    Quoted string: "friends"
+        | OPENCURLY expr_list:e1  CLOSECURLY
+    {:
+        System.err.println("Expression parsed as ExpressionList!");
+       	RESULT = new ListExpressionNode(e1);
+    :}

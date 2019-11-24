@@ -1,0 +1,28 @@
+/**
+ * This class represents a Statement List in the AST.
+ *
+ * @author Peter Ohmann + <your name here>
+ */
+public class ErrorListNode extends StatementNode {
+    StatementListNode s1;
+/**
+     * An empty statement list.
+     */
+    public ErrorListNode() {
+        super();
+        this.s1 = s1;
+    }
+
+    public void addStatement(StatementNode s, int position) {
+        this.s1.addStatement(s, position);
+    }
+
+    public void addStatement(StatementNode s) {
+        this.s1.addStatement(s);
+    }
+
+    @Override
+    public String toString() {
+        return "Error Statement";
+    }
+}

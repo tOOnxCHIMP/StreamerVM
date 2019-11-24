@@ -1,0 +1,81 @@
+Program parsed correctly!
+---------------------------
+--------Printing AST-------
+---------------------------
+Program
+    Function List
+    Statement List
+        Declaration statement: val1
+            Type: bool
+            Assignment to variable: val1
+                Boolean literal: true
+        Declaration statement: val2
+            Type: bool
+            Assignment to variable: val2
+                Boolean literal: false
+        Declaration statement: val3
+            Type: bool
+            Assignment to variable: val3
+                Boolean literal: false
+        Declaration statement: result
+            Type: bool
+            
+Function list parsed!
+Type parsed as BOOL!
+Expression parsed as True!
+Statement parsed as a declaration assignment!
+Type parsed as BOOL!
+Expression parsed as False!
+Statement parsed as a declaration assignment!
+Type parsed as BOOL!
+Expression parsed as False!
+Statement parsed as a declaration assignment!
+Type parsed as BOOL!
+Expression parsed as ID!
+Expression parsed as ID!
+Expression parsed as Or!
+Expression parsed as ID!
+Expression parsed as Not!
+Expression parsed as AND!
+Statement parsed as a declaration assignment!
+Empty statement list parsed!
+Statement list parsed!
+Statement list parsed!
+Statement list parsed!
+Statement list parsed!
+Program parsed!
+Program parsed correctly!
+---------------------------
+--------Printing AST-------
+---------------------------
+Program
+    Function List
+    Statement List
+        Declaration statement: val1
+            Type: bool
+            Assignment to variable: val1
+                Boolean: true
+        Declaration statement: val2
+            Type: bool
+            Assignment to variable: val2
+                Boolean: False
+        Declaration statement: val3
+            Type: bool
+            Assignment to variable: val3
+                Boolean: False
+        Declaration statement: result
+            Type: bool
+            Assignment to variable: result
+                Binary operator '&&'
+                    Binary operator '||'
+                        Identifier: val1
+                        Identifier: val2
+                    Binary operator '!'
+                        Identifier: val3
+Assignment to variable: result
+                Binary operator '||'
+                    Identifier: val1
+                    Binary operator '&&'
+                        Identifier: val2
+                        Not expression
+                            Identifier: val3
