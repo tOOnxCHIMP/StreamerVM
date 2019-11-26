@@ -48,10 +48,11 @@ public class StreamerC {
                 Symbol root = parser.parse();
                 System.out.println("Program parsed correctly!");
                 if (root.value instanceof ASTNode) {
-                    System.out.println("---------------------------");
-                    System.out.println("--------Printing AST-------");
-                    System.out.println("---------------------------");
-                    printAST((ASTNode)root.value);
+                    //System.out.println("---------------------------");
+                    //System.out.println("--------Printing AST-------");
+                    //System.out.println("---------------------------");
+                    //printAST((ASTNode)root.value);
+		    StreamerVM stream = new StreamerVM((ASTNode)root);
                 }
                 else {
                     System.out.println("---------------------------");
