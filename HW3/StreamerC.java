@@ -52,7 +52,7 @@ public class StreamerC {
                     //System.out.println("--------Printing AST-------");
                     //System.out.println("---------------------------");
                     //printAST((ASTNode)root.value);
-		    StreamerVM stream = new StreamerVM((ASTNode)root);
+		    StreamerVM stream = new StreamerVM((ASTNode)root.value);
                 }
                 else {
                     System.out.println("---------------------------");
