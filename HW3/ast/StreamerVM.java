@@ -16,7 +16,7 @@ public class StreamerVM
     {
 	for(ASTNode current: chilhere.childrenIter())
 	   {
-	       if(current != null)
+	       	       if(current != null)
 		   {
 		       printchil(current);
 		   }
