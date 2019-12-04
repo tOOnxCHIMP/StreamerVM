@@ -18,6 +18,10 @@ public class TrueExpressionNode extends ExpressionNode {
         return this.value;
     }
 
+    public String getValue1(){
+     return "True"; 
+    }
+    
     @Override
     public String toString() {
         return "Boolean literal: true" ;

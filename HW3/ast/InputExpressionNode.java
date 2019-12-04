@@ -12,6 +12,10 @@ public class InputExpressionNode extends ExpressionNode {
         super();
         this.children.add(id);
     }
+    
+    public String getValue1(){
+     return this.id; 
+    }
 
 
     @Override

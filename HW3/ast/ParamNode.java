@@ -18,6 +18,10 @@ public class ParamNode extends ExpressionNode {
 
     }
 
+    public String getValue1(){
+     return ""; 
+    }
+    
     @Override
     public String toString() {
         return "Parameter: " + this.id;

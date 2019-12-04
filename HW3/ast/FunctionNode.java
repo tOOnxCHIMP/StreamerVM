@@ -12,16 +12,20 @@ public class FunctionNode extends ExpressionNode {
 
     public FunctionNode()
     {
-	super();
+ super();
     }
 
     public FunctionNode(String id, StatementListNode e, ParamListNode p, TypeNode t) {
         super();
         this.id = id;
-	this.children.add(t);
-	this.children.add(p);
+ this.children.add(t);
+ this.children.add(p);
         this.children.add(e);
-	
+ 
+    }
+    
+    public String getValue1(){
+     return this.id; 
     }
 
     @Override

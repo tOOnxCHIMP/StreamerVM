@@ -15,7 +15,11 @@ public class ListFilterNode extends ExpressionNode {
     public ListFilterNode(ExpressionNode e, ExpressionNode t) {
         super();
         this.children.add(e);
-	this.children.add(t);
+ this.children.add(t);
+    }
+    
+    public String getValue1(){
+     return ""; 
     }
 
     @Override

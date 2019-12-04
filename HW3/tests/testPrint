@@ -1,1 +1,2 @@
-print "afasdfafs" ;
+ temp = 6 ;
+print temp;

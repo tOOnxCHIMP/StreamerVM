@@ -13,14 +13,18 @@ public class BinaryOpExpressionNode extends ExpressionNode {
      * Represent an infix binary operator; that is "left op right".
      */
     public BinaryOpExpressionNode(ExpressionNode left,
-				ExpressionNode right,
+    ExpressionNode right,
                                    String op) {
         super();
         this.right = right;
         this.left = left;
         this.operator = op;
         this.children.add(left);
-	this.children.add(right);
+ this.children.add(right);
+    }
+    
+    public String getValue1(){
+     return this.operator; 
     }
 
     @Override

@@ -18,6 +18,10 @@ public class FalseExpressionNode extends ExpressionNode {
         return this.value;
     }
 
+    public String getValue1(){
+     return "False"; 
+    }
+    
     @Override
     public String toString() {
         return "Boolean literal: false" ;

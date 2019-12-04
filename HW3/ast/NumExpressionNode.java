@@ -25,6 +25,10 @@ public class NumExpressionNode extends ExpressionNode {
     public double getValue() {
         return this.value;
     }
+    
+    public String getValue1(){
+      return this.value + " "; 
+    }
 
     @Override
     public String toString() {

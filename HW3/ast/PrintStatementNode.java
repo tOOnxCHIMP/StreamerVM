@@ -9,6 +9,14 @@ public class PrintStatementNode extends StatementNode {
         this.children.add(e);
     }
 
+    public String printOne()
+    {
+ for(ASTNode child: children)
+     {
+  return ((ExpressionNode) child).getValue1();
+     }
+ return "oops";
+    }
     @Override
     public String toString() {
         return "Print Statement";

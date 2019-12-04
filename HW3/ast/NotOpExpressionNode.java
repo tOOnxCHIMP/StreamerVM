@@ -12,7 +12,7 @@ public class NotOpExpressionNode extends ExpressionNode {
      * Represent an infix binary operator; that is "left op right".
      */
     public NotOpExpressionNode(ExpressionNode left,
-				   String op) {
+       String op) {
         super();
         
         this.left = left;
@@ -20,6 +20,10 @@ public class NotOpExpressionNode extends ExpressionNode {
         this.children.add(left);
         
       
+    }
+    
+    public String getValue1(){
+     return this.operator; 
     }
 
     @Override

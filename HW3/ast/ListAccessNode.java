@@ -13,13 +13,17 @@ public class ListAccessNode extends ExpressionNode {
      * Represent an infix binary operator; that is "left op right".
      */
     public ListAccessNode(ExpressionNode left,
-				ExpressionNode right) {
+    ExpressionNode right) {
         super();
 
         this.children.add(left);
-	this.children.add(right);
+ this.children.add(right);
     }
 
+    public String getValue1(){
+     return this.operator; 
+    }
+    
     @Override
     public String toString() {
         return "List Access ";

@@ -25,6 +25,10 @@ public class QstringExpressionNode extends ExpressionNode {
     public String getValue() {
         return this.value;
     }
+    
+    public String getValue1(){
+     return this.value; 
+    }
 
     @Override
     public String toString() {

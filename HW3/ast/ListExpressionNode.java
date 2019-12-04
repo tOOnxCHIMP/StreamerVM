@@ -23,6 +23,10 @@ public class ListExpressionNode extends ExpressionNode {
     public void addStatement(ExpressionNode s) {
         this.children.add(s);
     }
+    
+    public String getValue1(){
+     return ""; 
+    }
 
     @Override
     public String toString() {

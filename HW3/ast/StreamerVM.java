@@ -1,6 +1,11 @@
+import java.util.HashMap;
+
 public class StreamerVM
 {
-    ASTNode chil;
+  
+  private static HashMap<String, Double> st = new HashMap<String, Double>();
+  ASTNode chil;
+  
   public StreamerVM(ASTNode node)
   {
        System.out.println("In Here");
@@ -14,13 +19,25 @@ public class StreamerVM
 
     public static  void printchil(ASTNode chilhere)
     {
-	for(ASTNode current: chilhere.childrenIter())
-	   {
-	       	       if(current != null)
-		   {
-		       printchil(current);
-		   }
-	       System.out.println(current.toString());
-	   }
+ for(ASTNode current: chilhere.childrenIter())
+    {
+            if(current instanceof PrintStatementNode)
+     {
+         System.out.println(((PrintStatementNode) current).printOne());
+     }
+            else if(current instanceof AssignExpressionNode)
+            {
+               st.put(((AssignExpressionNode) current).getValue1(), ((NumExpressionNode) current.children.get(0)).getValue());
+               
+              for(String input:st.keySet())
+               {
+                System.out.println("" + st.get(input));
+               }
+            }
+     else
+      {
+   printchil(current);
+      }
+         }
     }
 }
