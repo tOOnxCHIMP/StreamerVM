@@ -1,2 +1,9 @@
- temp = 6 ;
-print temp;
+num x = 4;
+num y = 3;
+if(x == 4){
+ z = y + x;
+}
+else {
+ z = y + 100;
+}
+print z;

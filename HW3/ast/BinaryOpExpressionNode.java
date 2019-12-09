@@ -20,7 +20,25 @@ public class BinaryOpExpressionNode extends ExpressionNode {
         this.left = left;
         this.operator = op;
         this.children.add(left);
- this.children.add(right);
+        this.children.add(right);
+    }
+    
+    public String getLeft(){
+      if(this.left instanceof IdExpressionNode){
+       return ((IdExpressionNode) this.left).getValue1(); 
+      }
+      else{
+       return ((NumExpressionNode) this.left).getValue1(); 
+      }
+    }
+    
+    public String getRight(){
+      if(this.right instanceof IdExpressionNode){
+       return ((IdExpressionNode) this.right).getValue1(); 
+      }
+      else{
+       return ((NumExpressionNode) this.right).getValue1(); 
+      }
     }
     
     public String getValue1(){

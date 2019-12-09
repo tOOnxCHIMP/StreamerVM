@@ -1,4 +1,4 @@
-import java_cup.runtime.*;
+//import java_cup.runtime.*;
 
 /**
  * This class represents an identifier (as an expression in the AST).
@@ -12,6 +12,7 @@ public class IdExpressionNode extends ExpressionNode {
         super();
         this.value = id;
     }
+    
     
     public String getValue1(){
      return this.value; 
