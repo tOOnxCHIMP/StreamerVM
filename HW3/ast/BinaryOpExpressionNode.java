@@ -32,6 +32,14 @@ public class BinaryOpExpressionNode extends ExpressionNode {
       }
     }
     
+    public ExpressionNode getLeft1(){
+       return this.left; 
+    }
+    
+      public ExpressionNode getRight1(){
+       return this.right; 
+    }
+    
     public String getRight(){
       if(this.right instanceof IdExpressionNode){
        return ((IdExpressionNode) this.right).getValue1(); 
