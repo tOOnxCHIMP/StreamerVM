@@ -55,7 +55,7 @@ program ::= func_list:f stmt_list:s
     {:
         System.err.println("Program parsed!");
         RESULT = new ProgramNode(f, s);
-    :}
+    :}DIVIDE
 ;
 
 func_list ::= func:f func_list:fl
